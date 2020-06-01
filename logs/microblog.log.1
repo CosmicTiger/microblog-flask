@@ -1,26 +1,5 @@
-2020-05-31 00:53:58,501 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 00:54:06,311 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:24:08,081 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:25:23,726 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:26:45,850 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:28:04,744 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:29:24,575 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:30:08,081 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:31:00,635 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 15:52:52,643 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 15:55:02,898 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 15:59:45,818 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 16:00:01,040 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 16:00:37,076 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 16:05:20,311 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 17:13:26,808 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 17:13:42,871 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 17:14:20,418 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 17:16:03,296 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 17:16:20,025 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 22:22:47,248 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 23:10:15,980 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 23:10:31,473 ERROR: Exception on /user/Joker [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+2020-06-01 02:09:58,912 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
+2020-06-01 02:10:12,951 ERROR: Exception on /reset_password_request [POST] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -34,37 +13,13 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 75, in user
-    return render_template('user.html', user=user, posts=posts, form=form)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
-    return _render(
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
-    rv = template.render(context)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
-    self.environment.handle_exception()
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
-    reraise(*rewrite_traceback_stack(source=source))
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
-    raise value.with_traceback(tb)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/user.html", line 1, in top-level template code
-    {% extends "layout.html" %}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/layout.html", line 32, in top-level template code
-    {% block content %}{% endblock %}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/user.html", line 34, in block "content"
-    {% include '_post.html' %}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
-    reraise(*rewrite_traceback_stack(source=source))
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
-    raise value.with_traceback(tb)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/_post.html", line 5, in template
-    <a ref="{{ url_for('user', username=post.author.username ))}} ">
-jinja2.exceptions.TemplateSyntaxError: unexpected ')'
-2020-05-31 23:15:03,942 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 23:58:05,663 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 23:58:28,044 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 23:58:45,008 ERROR: Exception on /index [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 173, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/email.py", line 13, in send_password_reset_email
+    sender=app.config['ADMINS'][0],
+NameError: name 'app' is not defined
+2020-06-01 02:11:19,892 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
+2020-06-01 02:11:24,829 ERROR: Exception on /reset_password_request [POST] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -78,10 +33,43 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 21, in index
-    page = request.arg.get('page', 1, type=int)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
-    return getattr(self._get_current_object(), name)
-AttributeError: 'Request' object has no attribute 'arg'
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 173, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/email.py", line 15, in send_password_reset_email
+    text_body=render_template('email/reset_password.txt',
+NameError: name 'render_template' is not defined
+2020-06-01 02:11:50,104 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
+2020-06-01 02:11:54,467 ERROR: Exception on /reset_password_request [POST] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 173, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/email.py", line 16, in send_password_reset_email
+    text_body=render_template('email/reset_password.txt',
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: email/reset_password.txt
+2020-06-01 02:13:09,627 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
