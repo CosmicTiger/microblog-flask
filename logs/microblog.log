@@ -1,4 +1,5 @@
-2020-06-03 18:36:35,956 ERROR: Exception on /index [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+2020-06-03 20:49:43,443 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 20:49:45,739 ERROR: Exception on /index [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -14,35 +15,34 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 30, in index
-    return render_template('index.html', title='Home', form=form,
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
-    return _render(
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
-    rv = template.render(context)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
-    self.environment.handle_exception()
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
-    reraise(*rewrite_traceback_stack(source=source))
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
-    raise value.with_traceback(tb)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/index.html", line 2, in top-level template code
-    {% import 'bootstrap/wtf.html' as wtf %}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/layout.html", line 1, in top-level template code
-    {% extends 'bootstrap/base.html' %}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
-    {% block doc -%}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
-    {%- block html %}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
-    {% block body -%}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
-    {% block content -%}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/layout.html", line 52, in block "content"
-    {% block app_content %}{% endblock %}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/index.html", line 11, in block "app_content"
-    {% include '_post.html' %}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/_post.html", line 12, in top-level template code
-    said {{ moment(post.timestamp).fromNoew() }}:
-jinja2.exceptions.UndefinedError: 'flask_moment._moment object' has no attribute 'fromNoew'
-2020-06-03 18:36:46,024 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:53]
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 31, in index
+    return render_template('index.html', title=_('Home'), form=form,
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_babel/__init__.py", line 548, in gettext
+    t = get_translations()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_babel/__init__.py", line 221, in get_translations
+    [get_locale()],
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_babel/__init__.py", line 251, in get_locale
+    rv = babel.locale_selector_func()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py", line 61, in get_locale
+    g.locale(str(get_locale()))
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: '_AppCtxGlobals' object has no attribute 'locale'
+2020-06-03 20:51:39,059 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 21:43:53,522 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 21:45:00,672 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 21:46:53,845 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 21:47:10,967 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 21:48:03,427 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 21:49:12,791 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 22:31:13,007 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 22:31:57,958 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 22:32:07,692 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 22:32:17,509 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 22:32:52,494 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 22:33:06,528 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 22:33:56,440 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 22:35:14,984 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 22:36:24,390 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 22:36:28,719 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]
+2020-06-03 22:37:52,994 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:56]

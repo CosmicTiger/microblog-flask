@@ -1,4 +1,4 @@
-2020-06-01 14:19:23,912 ERROR: Exception on /index [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+2020-06-01 14:19:30,135 ERROR: Exception on /explore [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -14,8 +14,8 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 30, in index
-    return render_template('index.html', title='Home', form=form,
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 44, in explore
+    return render_template('index.html', title='Explore', posts=posts.items,
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
     ctx.app.jinja_env.get_or_select_template(template_name_or_list),
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
@@ -35,7 +35,7 @@ Traceback (most recent call last):
   File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/index.html", line 17, in template
     <span aria-hidden="true">&larr;</span> Newer posts
 jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got 'true'
-2020-06-01 14:19:29,152 ERROR: Exception on /index [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+2020-06-01 14:19:32,928 ERROR: Exception on /user/Joker [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -51,8 +51,8 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 30, in index
-    return render_template('index.html', title='Home', form=form,
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 100, in user
+    return render_template('user.html', user=user, posts=posts.items,
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
     ctx.app.jinja_env.get_or_select_template(template_name_or_list),
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
@@ -69,6 +69,11 @@ Traceback (most recent call last):
     reraise(*rewrite_traceback_stack(source=source))
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
     raise value.with_traceback(tb)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/index.html", line 17, in template
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/user.html", line 42, in template
     <span aria-hidden="true">&larr;</span> Newer posts
 jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got 'true'
+2020-06-01 14:22:30,885 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:51]
+2020-06-01 14:41:46,385 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:51]
+2020-06-01 14:42:59,600 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:51]
+2020-06-01 14:43:44,752 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:51]
+2020-06-03 18:36:24,491 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:53]
