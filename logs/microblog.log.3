@@ -1,45 +1,4 @@
-2020-06-01 02:09:58,912 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
-2020-06-01 02:10:12,951 ERROR: Exception on /reset_password_request [POST] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
-Traceback (most recent call last):
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
-    raise value
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 173, in reset_password_request
-    send_password_reset_email(user)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/email.py", line 13, in send_password_reset_email
-    sender=app.config['ADMINS'][0],
-NameError: name 'app' is not defined
-2020-06-01 02:11:19,892 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
-2020-06-01 02:11:24,829 ERROR: Exception on /reset_password_request [POST] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
-Traceback (most recent call last):
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
-    raise value
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 173, in reset_password_request
-    send_password_reset_email(user)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/email.py", line 15, in send_password_reset_email
-    text_body=render_template('email/reset_password.txt',
-NameError: name 'render_template' is not defined
-2020-06-01 02:11:50,104 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
-2020-06-01 02:11:54,467 ERROR: Exception on /reset_password_request [POST] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+2020-06-01 02:13:17,971 ERROR: Exception on /reset_password_request [POST] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -57,19 +16,83 @@ Traceback (most recent call last):
     send_password_reset_email(user)
   File "/home/joker/Programming_Projects/flask-practices/microblog/app/email.py", line 16, in send_password_reset_email
     text_body=render_template('email/reset_password.txt',
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
-    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
-    return self.get_template(template_name_or_list, parent, globals)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
-    return self._load_template(name, self.make_globals(globals))
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
-    template = self.loader.load(self, name, globals)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/loaders.py", line 115, in load
-    source, filename, uptodate = self.get_source(environment, name)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
-    return self._get_source_fast(environment, template)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
-    raise TemplateNotFound(template)
-jinja2.exceptions.TemplateNotFound: email/reset_password.txt
-2020-06-01 02:13:09,627 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/email/reset_password.txt", line 5, in top-level template code
+    {{ url_for('reset password', token=token, _external=True) }}
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'reset password' with values ['token']. Did you mean 'reset_password' instead?
+2020-06-01 02:17:39,162 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
+2020-06-01 02:19:37,539 ERROR: Exception on /reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6MiwiZXhwIjoxNTkxMDAwMDYzLjI2NTYxNTV9.eN2geIcKVHtUF352G7_-Bo4jfFE4KxyvUY5Ed4N7JeA [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 183, in reset_password
+    user = User.verify_reset_password_token(token)
+AttributeError: type object 'User' has no attribute 'verify_reset_password_token'
+2020-06-01 02:22:02,818 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
+2020-06-01 02:22:24,707 ERROR: Exception on /reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6MiwiZXhwIjoxNTkxMDAwMzMzLjMzNzQ0MDN9.94ZplITgnO9ebLF-96aHkwhbMRldldWxdKcuIsMejW8 [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 183, in reset_password
+    user = User.verify_reset_password_token(token)
+AttributeError: type object 'User' has no attribute 'verify_reset_password_token'
+2020-06-01 02:24:09,651 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
+2020-06-01 02:24:23,403 ERROR: Exception on /reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6MiwiZXhwIjoxNTkxMDAwNDU0LjAyMzk0NDZ9.CNYO9b6PAadhZ22-nSaCIUJYa-JxukDri3NqSvpOY8I [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 183, in reset_password
+    user = User.verify_reset_password_token(token)
+AttributeError: type object 'User' has no attribute 'verify_reset_password_token'
+2020-06-01 02:27:32,485 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
+2020-06-01 02:30:09,770 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
+2020-06-01 14:19:10,912 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:51]

@@ -1,70 +1,4 @@
-2020-05-31 00:53:58,501 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 00:54:06,311 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:24:08,081 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:25:23,726 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:26:45,850 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:28:04,744 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:29:24,575 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:30:08,081 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 01:31:00,635 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 15:52:52,643 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 15:55:02,898 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 15:59:45,818 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 16:00:01,040 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 16:00:37,076 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 16:05:20,311 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 17:13:26,808 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 17:13:42,871 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 17:14:20,418 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 17:16:03,296 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 17:16:20,025 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 22:22:47,248 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 23:10:15,980 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 23:10:31,473 ERROR: Exception on /user/Joker [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
-Traceback (most recent call last):
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
-    raise value
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 75, in user
-    return render_template('user.html', user=user, posts=posts, form=form)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
-    return _render(
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
-    rv = template.render(context)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
-    self.environment.handle_exception()
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
-    reraise(*rewrite_traceback_stack(source=source))
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
-    raise value.with_traceback(tb)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/user.html", line 1, in top-level template code
-    {% extends "layout.html" %}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/layout.html", line 32, in top-level template code
-    {% block content %}{% endblock %}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/user.html", line 34, in block "content"
-    {% include '_post.html' %}
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
-    reraise(*rewrite_traceback_stack(source=source))
-  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
-    raise value.with_traceback(tb)
-  File "/home/joker/Programming_Projects/flask-practices/microblog/app/templates/_post.html", line 5, in template
-    <a ref="{{ url_for('user', username=post.author.username ))}} ">
-jinja2.exceptions.TemplateSyntaxError: unexpected ')'
-2020-05-31 23:15:03,942 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 23:58:05,663 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 23:58:28,044 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
-2020-05-31 23:58:45,008 ERROR: Exception on /index [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+2020-05-31 23:59:52,422 ERROR: Exception on /index [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -81,7 +15,92 @@ Traceback (most recent call last):
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
   File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 21, in index
-    page = request.arg.get('page', 1, type=int)
+    page = request.args.get('page', 1, type=int)
   File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
     return getattr(self._get_current_object(), name)
 AttributeError: 'Request' object has no attribute 'arg'
+2020-06-01 00:01:23,417 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
+2020-06-01 00:01:31,028 ERROR: Exception on /explore [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 146, in explore
+    page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2020-06-01 00:02:38,835 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
+2020-06-01 00:02:41,031 ERROR: Exception on /explore [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 146, in explore
+    page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2020-06-01 00:03:31,600 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
+2020-06-01 00:03:36,858 ERROR: Exception on /index [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 23, in index
+    page, app.config['POST_PER_PAGE'], False)
+KeyError: 'POST_PER_PAGE'
+2020-06-01 00:03:58,668 ERROR: Exception on /index [GET] [in /home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/microblog-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/joker/Programming_Projects/flask-practices/microblog/app/routes.py", line 23, in index
+    page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POST_PER_PAGE'
+2020-06-01 00:04:03,712 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
+2020-06-01 00:14:45,983 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
+2020-06-01 00:15:10,328 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
+2020-06-01 00:22:32,160 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:47]
+2020-06-01 01:23:07,240 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
+2020-06-01 01:39:08,648 INFO: Microblog startup [in /home/joker/Programming_Projects/flask-practices/microblog/app/__init__.py:49]
