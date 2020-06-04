@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-06-03 21:49-0600\n"
+"POT-Creation-Date: 2020-06-03 23:05-0600\n"
 "PO-Revision-Date: 2020-06-03 20:19-0600\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -227,14 +227,17 @@ msgid "Last seen on:"
 msgstr "Última vez visto:"
 
 #: app/templates/user.html:13
-msgid "followers,"
-msgstr "seguidores,"
+#, python-format
+msgid "%(count)d followers"
+msgstr "Seguidores %(count)d"
 
 #: app/templates/user.html:13
-msgid "following."
-msgstr "siguiendo."
+#, python-format
+msgid "%(count)d following"
+msgstr "Siguiendo %(count)d"
 
 #: app/templates/user.html:15
 msgid "Edit your profile"
 msgstr "Edita tu pérfil"
+
 
